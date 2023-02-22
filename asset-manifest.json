@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Home-Land/static/css/main.59212a85.css",
+    "main.js": "/Home-Land/static/js/main.6d1a5f0d.js",
+    "index.html": "/Home-Land/index.html",
+    "main.59212a85.css.map": "/Home-Land/static/css/main.59212a85.css.map",
+    "main.6d1a5f0d.js.map": "/Home-Land/static/js/main.6d1a5f0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59212a85.css",
+    "static/js/main.6d1a5f0d.js"
+  ]
+}
