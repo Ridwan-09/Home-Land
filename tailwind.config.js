@@ -1,5 +1,8 @@
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    "./src/**/*.{html, js, ts, vue}", 
+    "./src/**/*"
+],
   theme: {
     fontFamily: {
       primary: 'Poppins',
