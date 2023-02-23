@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {useState, useEffect, createContext} from 'react';
 
-const HouseContext = () => {
-  return <div>HouseContext</div>;
+// import data
+import {houseData} from '../data';
+
+// create context 
+export const HouseContext = createContext();
+
+const HouseContextProvider = ({children}) => {
+  return (
+    <HouseContext.Provider value={  }}>
+      {children}
+    </HouseContext.Provider>
+  );
 };
 
-export default HouseContext;
+export default HouseContextProvider;
