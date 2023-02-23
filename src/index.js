@@ -6,7 +6,7 @@ import App from './App';
 // import router
 import {BrowserRouter as Router} from 'react-router-dom';
 
-// immport house context provider
+// import house context provider
 import HouseContextProvider from "./components/HouseContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
