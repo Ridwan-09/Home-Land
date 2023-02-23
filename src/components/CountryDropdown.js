@@ -22,7 +22,7 @@ const CountryDropdown = () => {
         <div>
           <div className='text-[15px] font-medium leading-tight'>{country}</div>
           <div className='text-[13px]'>Select your place</div>
-          </div>
+        </div>
           {
             isOpen ? (
               <RiArrowUpSLine className='dropdown-icon-secondary'/>
@@ -32,7 +32,7 @@ const CountryDropdown = () => {
           }
       </Menu.Button>
 
-      <Menu.Items>
+      <Menu.Items className='dropdown-menu'>
         {countries.map((country, index) => {
           return (
             <Menu.Item
