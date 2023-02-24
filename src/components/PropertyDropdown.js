@@ -40,7 +40,7 @@ const PropertyDropdown = () => {
             className='cursor-pointer hover:text-violet-700 transition' as='li' key={index}>
               {property}
             </Menu.Item>
-          )
+          );
         })}
       </Menu.Items>
     </Menu>
