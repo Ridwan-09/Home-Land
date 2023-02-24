@@ -9,7 +9,6 @@ import {Menu} from '@headlessui/react';
 // import house context
 import {HouseContext} from './HouseContext';
 
-
 const CountryDropdown = () => {
   const {country, setCountry, countries} = useContext(HouseContext);
 

@@ -44,7 +44,7 @@ const PriceRangeDropdown = () => {
       <Menu.Button onClick={() => setIsOpen(!isOpen)} className='dropdown-btn w-full text-left'>
         <RiWallet3Line className='dropdown-icon-primary'/>
         <div>
-          <div className='text-[15px] font-medium leading-tight'>{property}</div>
+          <div className='text-[15px] font-medium leading-tight'>{price}</div>
           <div className='text-[13px]'>Choose price range</div>
         </div>
           {
@@ -57,12 +57,12 @@ const PriceRangeDropdown = () => {
       </Menu.Button>
 
       <Menu.Items className='dropdown-menu'>
-        {properties.map((property, index) => {
+        {prices.map((price, index) => {
           return (
             <Menu.Item
-            onClick={() => setProperty(property)} 
+            onClick={() => setPrice(price.value)} 
             className='cursor-pointer hover:text-violet-700 transition' as='li' key={index}>
-              {property}
+              {price.value}
             </Menu.Item>
           );
         })}
