@@ -47,10 +47,15 @@ const handleClick = () => {
 
   // create a function that checks if the string includes '(any)'
   const isDefault = (str) => {
-    return str.split('');
+    return str.split('').includes(('any'));
   };
 
-  console.log(isDefault(country));
+  console.log(price);
+  // get first value of price and parse it to number
+  const minPrice = parseInt(price.split('')[0]);
+  // get second value of price which is the maximum price and parse it to number
+  const maxPrice = parseInt(price.split('')[2]);
+  console.log(maxPrice);
 };
 
   return (
