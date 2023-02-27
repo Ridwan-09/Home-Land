@@ -108,8 +108,11 @@ const handleClick = () => {
           }
         }
   });
-  console.log(newHouses);
-
+  
+  setTimeout(() => {
+    return newHouses.length < 1 ? setHouses([]) : setHouses(newHouses);
+    setLoading(false);
+  }, 1000);
 };
 
   return (
@@ -126,6 +129,7 @@ const handleClick = () => {
       houses,
       loading,
       handleClick,
+      loading,
     } }>
       {children}
     </HouseContext.Provider>
