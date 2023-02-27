@@ -55,7 +55,12 @@ const handleClick = () => {
   const minPrice = parseInt(price.split('')[0]);
   // get second value of price which is the maximum price and parse it to number
   const maxPrice = parseInt(price.split('')[2]);
-  console.log(maxPrice);
+  
+  const newHouses = housesData.filter((house)=> {
+    console.log(parseInt(house.price));
+  });
+
+  return newHouses;
 };
 
   return (
