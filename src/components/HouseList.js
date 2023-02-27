@@ -15,8 +15,8 @@ import {ImSpinner2} from 'react-icons/im';
 const HouseList = () => {
   const {houses, loading} = useContext(HouseContext);
 
-  
-  return <section className='mb-20'>
+  return (
+    <section className='mb-20'>
     <div className="container mx-auto">
       <div className='grid md:grid-cpls-2 lg:grid-cols-3 gap-4 lg:gap-14'>
         {houses.map((house, index)=> {
@@ -28,7 +28,8 @@ const HouseList = () => {
         })}
       </div>
     </div>
-  </section>;
+  </section>
+  );
 };
 
 export default HouseList;
