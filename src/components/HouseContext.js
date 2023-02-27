@@ -54,10 +54,10 @@ const handleClick = () => {
   // get second value of price which is the maximum price and parse it to number
   const maxPrice = parseInt(price.split(' ')[2]);
   
-  const newHouses = housesData.filter((house)=> {
+  const newHouses = housesData.filter((house) => {
     const housePrice = (parseInt(house.price));
 
-    // if all valuse are selected
+    // if all values are selected
     if (
       house.country === country && 
       house.type === property && 
@@ -74,6 +74,17 @@ const handleClick = () => {
       // if country is not default
       if (!isDefault(country) && isDefault(property) && isDefault(price)){
         return house.country === country;
+      }
+
+      // if property is not default
+      if (!isDefault(property) && isDefault(country) && isDefault(price)) {
+        return house.type === property;
+      }
+      // if price is not default
+      if(!isDefault(price) && isDefault(country) && isDefault(property)){
+        if (housePrice >= minPrice && housePrice <= maxPrice){
+          return house;
+        }
       }
   });
   console.log(newHouses);
