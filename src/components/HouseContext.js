@@ -43,8 +43,6 @@ const HouseContextProvider = ({children}) => {
 }, []);
 
 const handleClick = () => {
-  console.log(country, property, price);
-
   // create a function that checks if the string includes '(any)'
   const isDefault = (str) => {
     return str.split('').includes(('any'));
@@ -72,6 +70,10 @@ const handleClick = () => {
       // if all values are default
       if (isDefault(country) && isDefault(property) && isDefault(price)){
         return house;
+      }
+      // if country is not default
+      if (!isDefault(country) && isDefault(property) && isDefault(price)){
+        return house.country === country;
       }
   });
   console.log(newHouses);
