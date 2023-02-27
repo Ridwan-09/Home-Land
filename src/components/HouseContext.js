@@ -91,6 +91,13 @@ const handleClick = () => {
       if (!isDefault(country) && !isDefault(property) && isDefault(price)){
         return house.country === country && house.type === property;
         }
+
+        // if country & price is not default
+        if (!isDefault(country) && isDefault(property) && !isDefault(price)){
+          if (housePrice >= minPrice && housePrice <= maxPrice){
+            return house.country === country;
+          }
+        }
   });
   console.log(newHouses);
 
