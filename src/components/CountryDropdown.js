@@ -24,9 +24,9 @@ const CountryDropdown = () => {
         </div>
           {
             isOpen ? (
-              <RiArrowUpSLine className='dropdown-icon-secondary'/>
-            ) : (
               <RiArrowDownSLine className='dropdown-icon-secondary'/>
+            ) : (
+              <RiArrowUpSLine className='dropdown-icon-secondary'/>
             )
           }
       </Menu.Button>
@@ -39,7 +39,7 @@ const CountryDropdown = () => {
             className='cursor-pointer hover:text-violet-700 transition' as='li' key={index}>
               {country}
             </Menu.Item>
-          )
+          );
         })}
       </Menu.Items>
     </Menu>
