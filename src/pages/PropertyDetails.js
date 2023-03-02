@@ -23,7 +23,19 @@ const house = housesData.find((house) => {
 
   return (
     <section>
-      <div>PropertyDetails</div>
+      <div className='container mx-auto min-h-[800px] mb-14'>
+        <div className='flex flex-col lg:flex-row lg:items-center lg: justify-between'>
+          <div>
+            <h2>{house.name}</h2>
+            <h3>{house.address}</h3>
+          </div>
+          <div>
+            <div>{house.type}</div>
+            <div>{house.country}</div>
+          </div>
+          <div>$ {house.price}</div>
+        </div>
+      </div>
     </section>
   );
 };
