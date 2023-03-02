@@ -68,6 +68,17 @@ const house = housesData.find((house) => {
                 </Link>
               </div>
             </div>
+            {/* form */}
+            <form>
+              <input className='border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm' type="text" placeholder='Name*' />
+              <input className='border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm' type="text" placeholder='Email*' />
+              <input className='border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm' type="text" placeholder='Phone*' />
+              <textarea></textarea>
+              <div>
+                <button>Send message</button>
+                <button>Call</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
