@@ -57,7 +57,7 @@ const handleClick = () => {
   const maxPrice = parseInt(price.split(' ')[2]);
   
   const newHouses = housesData.filter((house) => {
-    const housePrice = (parseInt(house.price));
+    const housePrice = parseInt(house.price);
 
     // if all values are selected
     if (
