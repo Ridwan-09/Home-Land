@@ -35,11 +35,26 @@ const house = housesData.find((house) => {
           </div>
           <div className='text-3xl font-semibold text-violet-600'>$ {house.price}</div>
         </div>
-        <div className='flex'>
+        <div className='flex flex-col items-start gap-8 lg:flex-row'>
           <div className='max-w-[768px]'>
             <div className='mb-8'>
               <img src={house.imageLg} alt="" />
             </div>
+            <div className='flex gap-x-6 text-violet-700 mb-6'>
+              <div className='flex gap-x-2 items-center'>
+                <BiBed className='text-2xl'/>
+                <div>{house.bedrooms}</div>
+              </div>
+              <div className='flex gap-x-2 items-center'>
+                <BiBath className='text-2xl'/>
+                <div>{house.bedrooms}</div>
+              </div>
+              <div className='flex gap-x-2 items-center'>
+                <BiArea className='text-2xl'/>
+                <div>{house.bedrooms}</div>
+              </div>
+            </div>
+            <div>{house.description}</div>
           </div>
         </div>
       </div>
