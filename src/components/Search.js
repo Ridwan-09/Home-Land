@@ -22,7 +22,7 @@ const Search = () => {
         <RiSearch2Line/>
       </button>
     </div>
-  )
+  );
 };
 
 export default Search;
