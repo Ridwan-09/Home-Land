@@ -47,14 +47,27 @@ const house = housesData.find((house) => {
               </div>
               <div className='flex gap-x-2 items-center'>
                 <BiBath className='text-2xl'/>
-                <div>{house.bedrooms}</div>
+                <div>{house.bathrooms}</div>
               </div>
               <div className='flex gap-x-2 items-center'>
                 <BiArea className='text-2xl'/>
-                <div>{house.bedrooms}</div>
+                <div>{house.surface}</div>
               </div>
             </div>
             <div>{house.description}</div>
+          </div>
+          <div className='flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg px-6 py-8'>
+            <div className='flex items-center gap-x-4 mb-8'>
+              <div className='w-20 h-20 p-1 border border-gray-300 rounded-full'>
+                <img src={house.agent.image} alt="" />
+              </div>
+              <div>
+                <div className='font-bold text-lg'>{house.agent.name}</div>
+                <Link to='' className='text-violet-700 text-sm'>
+                  View Listings
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
